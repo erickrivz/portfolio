@@ -1,0 +1,142 @@
+/*  ==========================
+    BASE TYPOGRAPHY
+    This is added as a template to help start. 
+    You should change the fonts, font-sizes and anything else appropriate for your site.
+    ========================== */
+
+/* Optional, include a web font. @import must come before other styles. These examples are commented out */
+
+/*
+@import url('https://fonts.googleapis.com/css?family=Rubik:400,400i,700,700i');
+@import url('https://fonts.googleapis.com/css?family=Barlow+Condensed:400,500');
+*/
+
+/* The html and body selectors below set the base type for the entire page */
+html {
+    font-size: 1em;
+}
+
+body {
+    font-family: sans-serif;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #333;
+}
+
+
+/* This adds space between paragraphs and list items*/
+/* NOTE: most Navigations use list items so you will need to */
+/* explicity set the margins on those so this rule doesn't */
+/* mess up your navigation styling */
+p,
+li {
+    margin-top: 0;
+    margin-bottom: 1em;
+}
+
+
+/* Base Styling for headings.
+    You can and should modify these to fit your site*/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 500;
+    font-family: serif;
+}
+
+
+/* For each of your headings at minimum set the margin, size, line-height. 
+Adjust font-weight and other properties as needed. */
+
+h1 {
+    font-size: 5.063em;
+    line-height: 1;
+    margin: 0 0 0.5em 0;
+}
+
+h2 {
+    font-size: 3.375em;
+    line-height: 1.2;
+    margin: 1.5em 0 0.5em 0;
+}
+
+h3 {
+    font-size: 2.25em;
+    line-height: 1;
+    margin: 1.5em 0 0.25em 0;
+}
+
+h4 {
+    font-size: 1.5em;
+    line-height: 1;
+    margin: 1.5em 0 0.5em 0;
+    font-weight: 400;
+}
+
+h5 {
+    font-size: 1em;
+    line-height: 1;
+    margin: 1.5em 0 0.5em 0;
+    font-weight: 400;
+}
+
+h6 {
+    font-size: 1em;
+    line-height: 1.5;
+    margin: 1em 0 0 0;
+    font-weight: 400;
+    /* normal */
+    text-transform: uppercase;
+}
+
+/*  ==========================
+    BASE RESPONSIVE
+    ========================== */
+
+/* Use border-box box-sizing. This isn't strictly necessary with CSS Grid but can be helpful if you're using a float fallback and it tends to be more intuitive.*/
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+
+/* This is basic way to make images responsive. This means if they're larger than their container they will shrink to fit it. Not a complete solution to responsive images. */
+
+img, video {
+    width: auto;
+    height: auto;
+    max-width: 100%;
+}
+
+/*RESPONSIVE VIDEO
+See for more info: https://codepen.io/profstein/pen/mrMLRj
+*/
+.videoWrapper{
+    position: relative;
+    height: 0;
+    /* padding-bottom: 75%; */ /* 4:3 aspect ratio */
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+}
+
+.videoWrapper iframe{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width:100%;
+    height: 100%;
+}
+
+
+/*  ==========================
+    YOUR STYLES
+    Add your styles below.
+    ========================== */
