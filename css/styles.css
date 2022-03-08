@@ -12,6 +12,16 @@
 */
 
 /* The html and body selectors below set the base type for the entire page */
+
+@media (min-width: 600px) {
+
+
+
+
+    
+}
+
+
 html {
     font-size: 1em;
 }
