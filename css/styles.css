@@ -19,19 +19,29 @@
     grid-template-columns: 1fr;
 }
 
+Medium screen breakpoint */
+@media screen and (min-width: 600px) {
+  .page-projects {
+    grid-template-columns: 1fr 1fr;
+    padding: 0 10%;
+  }
+}
+/* ============ end min-width 600px =============== */
+
+/* ====================================
+large screen breakpoint */
+@media screen and (min-width: 1200px) {
+  .page-projects {
+    grid-template-columns: repeat(3, 1fr);
+    padding: 0 25%;
+  }
+}
+/* ============ end min-width 1200px =============== */
 
 
 
 
-
-@media screen and (min-width: 600px){
-    .page-projects{
-        grid-template-columns: 1fr 1fr;
-
-
-    }
-
-} /* end of media cuerry*/ 
+ 
 
 
 html {
