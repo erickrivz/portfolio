@@ -13,13 +13,25 @@
 
 /* The html and body selectors below set the base type for the entire page */
 
-@media (min-width: 600px) {
-
-
-
-
-    
+.page-projects{
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: 1fr;
 }
+
+
+
+
+
+
+@media screen and (min-width: 600px){
+    .page-projects{
+        grid-template-columns: 1fr 1fr;
+
+
+    }
+
+} /* end of media cuerry*/ 
 
 
 html {
