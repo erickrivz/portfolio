@@ -13,11 +13,162 @@
 
 /* The html and body selectors below set the base type for the entire page */
 
+@import url('https://fonts.googleapis.com/css?family=Roboto:400&display=swap');
+
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+img{
+  width:auto;
+  height: auto;
+  max-width: 100%;
+}
+a{
+  color: #555;
+}
+header.site-header{
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+}
+header.site-header .logo img{
+  width:320px;
+}
+
+header.site-header .bottom-header {
+    border-bottom: 1px solid #e9e9e9;
+    padding-bottom: 7px;
+/*     margin-right: 42px; */
+}
+header.site-header .bottom-header:after, header.site-header .top-header:after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+@media (max-width: 1285px){
+  header.site-header .bottom-header {
+    margin-right: 0;
+  }
+}
+
+header.site-header nav {
+    float: right;
+    padding-top: 15px;
+}
+@media (max-width: 1285px){
+  header.site-header nav {
+    padding-top: 10px;
+}
+}
+
+.hamburger {
+    display: none;
+    background: linear-gradient(to bottom, #666666 0%, #666666 20%, rgba(0, 0, 0, 0) 20%, rgba(0, 0, 0, 0) 40%, #666666 40%, #666666 60%, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0) 80%, #666666 80%, #666666 100%);
+    width: 21px;
+    height: 21px;
+}
+@media (max-width: 1285px){
+  .hamburger {
+    display: block;
+  }
+}
+
+
+nav > ul {
+    margin: 0;
+    padding: 0;
+}
+nav a{
+  text-decoration: none;
+}
+
+header.site-header .menu {
+    text-transform: uppercase;
+    list-style: none;
+    padding-left: 0;
+    font-size: 14px;
+}
+
+header.site-header .menu li {
+    float: left;
+    margin-right: 35px;
+    position: relative;
+}
+header.site-header .menu li:last-of-type {
+  margin-right: 10px;
+}
+
+header.site-header .menu li a {
+    text-decoration: none;
+    color: #666666;
+}
+
+@media (max-width: 1284px){
+  header.site-header .menu {
+    display: none;
+    background-color: white;
+  }
+
+  header.site-header .menu li {
+      margin-right: 0;
+      display: block;
+      float: none;
+      padding-bottom: 14px;
+      text-align: center;
+  }
+  
+  header.site-header .menu li a {
+    display: block;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    display: inline-block;
+    position: relative;
+  }
+
+}
+
+@media (max-width: 1023px){
+  header.site-header .menu li {
+    margin-right: 22px;
+  }
+}
+
+header.site-header .menu.mobile-menu {
+    display: none;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 5;
+    padding-left: 20px;
+    padding-top: 12px;
+    border-bottom: 1px solid #e9e9e9;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .page-projects{
     display: grid;
     grid-gap: 1rem;
     grid-template-columns: 1fr;
 }
+
+
 
 Medium screen breakpoint */
 @media screen and (min-width: 600px) {
