@@ -31,7 +31,8 @@ header.site-header{
   font-weight: 400;
 }
 header.site-header .logo img{
-  width:320px;
+  width:50px;
+  height: 100px;
 }
 
 header.site-header .bottom-header {
