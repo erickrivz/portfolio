@@ -31,8 +31,8 @@ header.site-header{
   font-weight: 400;
 }
 header.site-header .logo img{
-  width:70px;
-  height: 70px;
+  width:60px;
+  height: 60px;
   padding-top: 1fr;
 }
 
@@ -50,6 +50,7 @@ header.site-header .bottom-header:after, header.site-header .top-header:after {
 .footer{
   text-align: center;
   margin: 0 auto;
+  padding-top: 10px;
 }
 
 @media (max-width: 1285px){
