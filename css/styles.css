@@ -47,6 +47,11 @@ header.site-header .bottom-header:after, header.site-header .top-header:after {
     clear: both;
 }
 
+.footer{
+  text-align: center;
+  margin: 0 auto;
+}
+
 @media (max-width: 1285px){
   header.site-header .bottom-header {
     margin-right: 0;
