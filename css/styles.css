@@ -51,6 +51,7 @@ header.site-header .bottom-header:after, header.site-header .top-header:after {
   margin: 0 auto;
   text-align: center;
   width: 100%;
+  padding-top: 10px;
   
 }
 
