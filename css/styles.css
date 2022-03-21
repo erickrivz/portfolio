@@ -179,7 +179,7 @@ header.site-header .menu.mobile-menu {
 
 
 
-Medium screen breakpoint */
+/* Medium screen breakpoint */
 @media screen and (min-width: 600px) {
   .page-projects {
     grid-template-columns: 1fr 1fr;
